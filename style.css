@@ -161,7 +161,6 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* FAQ Title */
 .faq-title {
     text-align: center;
     font-size: 24px;
@@ -170,7 +169,6 @@ body {
     color: #333;
 }
 
-/* FAQ Item (details element) */
 .faq-item {
     border-bottom: 1px solid #e0e0e0;
     margin-bottom: 10px;
@@ -180,7 +178,6 @@ body {
     border-bottom: none;
 }
 
-/* FAQ Question (summary element) */
 .faq-question {
     padding: 20px 10px;
     font-size: 16px;
@@ -196,28 +193,6 @@ body {
 
 .faq-question:hover {
     color: #555;
-}
-
-/* Hide default marker/triangle */
-.faq-question::-webkit-details-marker {
-    display: none;
-}
-
-.faq-question::marker {
-    display: none;
-}
-
-/* Custom arrow indicator */
-.faq-question::before {
-    content: '›';
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-    transition: transform 0.3s ease;
 }
 
 @media (max-width: 480px) {
@@ -322,8 +297,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #e2e1e1;
-    padding-top: 70px; /* prevent content hiding under navbar */
-}
+    padding-top: 70px;
 
 .navbar {
     display: flex;
@@ -337,7 +311,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000;
+
 }
 
 .logo img {
